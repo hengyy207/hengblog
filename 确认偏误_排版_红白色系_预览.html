@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>确认偏误_排版_红白色系 · 公众号排版预览</title>
+<style>
+  body{margin:0;background:#eef0f2;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;-webkit-text-size-adjust:100%;}
+  .gzh-toolbar{position:fixed;top:0;left:0;right:0;height:54px;background:#ffffff;box-shadow:0 1px 10px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:99;}
+  .gzh-hint{font-size:13px;color:#6b7280;line-height:1.4;}
+  .gzh-hint b{color:#111827;}
+  .gzh-copy{background:#059669;color:#fff;border:0;border-radius:9px;padding:10px 20px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 3px 10px rgba(5,150,105,.28);white-space:nowrap;transition:transform .08s,background .15s;}
+  .gzh-copy:hover{background:#047857;}
+  .gzh-copy:active{transform:translateY(1px);}
+  .gzh-toast{position:fixed;top:66px;left:50%;transform:translateX(-50%);background:#111827;color:#fff;padding:11px 20px;border-radius:10px;font-size:14px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .25s;z-index:100;box-shadow:0 6px 20px rgba(0,0,0,.25);max-width:88vw;text-align:center;}
+  .gzh-toast.show{opacity:1;}
+  .gzh-stage{max-width:700px;margin:78px auto 64px;padding:0 8px;}
+  @media(max-width:520px){.gzh-hint{max-width:150px;}}
+</style>
+</head>
+<body>
+<div class="gzh-toolbar">
+  <span class="gzh-hint">👇 下方是排版效果 · 点右侧 <b>复制</b> 直接粘到公众号</span>
+  <button class="gzh-copy" id="gzhCopyBtn" onclick="gzhCopy()">📋 复制到公众号</button>
+</div>
+<div class="gzh-toast" id="gzhToast"></div>
+<div class="gzh-stage">
+  <div id="gzh-content">
+<section style="max-width:677px;margin:0 auto;background:#fff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#374151;line-height:1.8;letter-spacing:.5px;overflow-x:hidden;">
+  <section style="margin:10px 10px 32px;background:#fff;border-radius:12px;box-shadow:0 4px 24px -4px rgba(220,38,38,.15);padding:28px 24px 22px;overflow:hidden;">
+    <p style="font-size:42px;color:#DC2626;font-weight:900;margin:0;line-height:.6;"><span leaf="">“</span></p>
+    <p style="font-size:17px;font-weight:800;color:#1C1917;margin:12px 0 8px;line-height:1.75;padding-left:4px;"><span style="background:#DC2626;color:#fff;padding:2px 8px;border-radius:4px;"><span leaf="">你不是先看见</span></span><span leaf="">再相信，而是先相信</span><span style="background:#DC2626;color:#fff;padding:2px 8px;border-radius:4px;"><span leaf="">再看见</span></span><span leaf="">。</span></p>
+  </section>
+
+  <section style="border-left:4px solid #D6D3D1;padding:14px 20px;margin:0 10px 28px;background:#FAFAFA;border-radius:0 8px 8px 0;">
+    <p style="margin:0 0 10px;"><span style="display:inline-block;background:#FEE2E2;color:#991B1B;font-size:12px;font-weight:700;padding:2px 10px;border-radius:4px;margin-right:6px;"><span leaf="">摘要</span></span><span style="display:inline-block;border:1px solid #DC2626;color:#DC2626;font-size:12px;font-weight:600;padding:1px 10px;border-radius:4px;"><span leaf="">阅读约 3 分钟</span></span></p>
+    <p style="font-size:14px;color:#374151;margin:0;line-height:1.8;text-align:justify;"><span leaf="">你越讨厌一个人，越能找出他讨厌的证据；你越看好一只股票，越只看利好新闻；你越相信某个观点，越爱刷支持它的内容。这就是心理学里的</span><span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">确认偏误</span></span><span leaf="">。它让我们活在自己的回音室里，把偏见当成真相。本文用现实例子带你看懂它，并给出跳出陷阱的方法。</span></p>
+  </section>
+
+  <section style="padding:0 10px;">
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;"><span leaf="">你有没有发现：当你认定一个人不喜欢你，他回消息慢一点，你觉得是冷淡；他说话直接一点，你觉得是针对；他忘了点赞，你都能解读成“果然对我有意见”。</span></p>
+    <section style="background:#FEF2F2;border-radius:10px;padding:18px 20px;margin-bottom:24px;border:1px solid #FECACA;">
+      <p style="font-size:15px;color:#374151;margin:0 0 10px;line-height:1.8;text-align:justify;"><span leaf="">可如果换个人，同样的事，你会说：“他可能太忙了。”“他性格就这样。”“别想太多。”</span></p>
+      <p style="font-size:16px;font-weight:800;color:#991B1B;margin:0;line-height:1.8;text-align:center;"><span leaf="">事情没变，变的是你心里的结论。这就是心理学里非常常见的：确认偏误。</span></p>
+    </section>
+  </section>
+
+  <section style="padding:0 10px 32px;">
+    <p style="font-size:14px;color:#9CA3AF;margin:0 0 14px;letter-spacing:1px;"><span leaf="">📌 本文看点</span></p>
+    <section style="display:flex;justify-content:space-between;">
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:16px 10px;margin-right:8px;text-align:center;border:1px solid #FEE2E2;"><p style="display:inline-block;background:#DC2626;color:#fff;font-size:12px;font-weight:800;padding:2px 10px;border-radius:4px;margin:0 0 8px;"><span leaf="">01</span></p><p style="font-size:13px;font-weight:700;color:#1C1917;margin:0;"><span leaf="">看懂确认偏误</span></p></section>
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:16px 10px;margin-right:8px;text-align:center;border:1px solid #FEE2E2;"><p style="display:inline-block;background:#DC2626;color:#fff;font-size:12px;font-weight:800;padding:2px 10px;border-radius:4px;margin:0 0 8px;"><span leaf="">02</span></p><p style="font-size:13px;font-weight:700;color:#1C1917;margin:0;"><span leaf="">六个现实场景</span></p></section>
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:16px 10px;text-align:center;border:1px solid #FEE2E2;"><p style="display:inline-block;background:#DC2626;color:#fff;font-size:12px;font-weight:800;padding:2px 10px;border-radius:4px;margin:0 0 8px;"><span leaf="">03</span></p><p style="font-size:13px;font-weight:700;color:#1C1917;margin:0;"><span leaf="">六个跳出方法</span></p></section>
+    </section>
+  </section>
+
+  <section style="margin-top:16px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;"><span style="display:inline-block;background:#DC2626;color:#fff;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;"><span leaf="">01</span></span><section><p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;"><span leaf="">WHAT</span></p><h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;"><span leaf="">什么是确认偏误？</span></h3></section></section>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">确认偏误，简单说就是：我们会主动寻找、偏爱、记住那些支持自己已有观点的信息，而忽略、贬低、忘记相反的证据。</span></p>
+    <section style="background:#FEF2F2;border-radius:0 10px 10px 0;border-left:4px solid #DC2626;padding:18px 22px;margin-bottom:24px;"><p style="font-size:16px;font-weight:800;color:#991B1B;margin:0;line-height:1.8;"><span leaf="">不是先看证据再下结论，而是先有结论，再找证据。</span></p></section>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">比如：你相信“读书没用”，就会特别关注辍学创业成功的故事，忽略大量靠知识改变命运的人。你相信“男人没一个好东西”，就会记住每一次失望，忘掉那些靠谱的瞬间。你相信“这个项目能成”，就会把反对意见当成“他们不懂”，把风险提示当成“太保守”。</span></p>
+    <p style="font-size:15px;margin:0 0 24px;text-align:center;color:#DC2626;font-weight:700;letter-spacing:1px;border-top:1px solid #FEE2E2;border-bottom:1px solid #FEE2E2;padding:14px 10px;"><span leaf="">你以为自己在思考，其实很多时候，只是在给自己的偏见找证据。</span></p>
+  </section>
+
+  <section style="padding:0 10px;"><section style="height:1px;background:linear-gradient(to right,transparent,#FCA5A5,#DC2626,#FCA5A5,transparent);margin:0;"><span leaf=""><br></span></section></section>
+
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;"><span style="display:inline-block;background:#DC2626;color:#fff;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;"><span leaf="">02</span></span><section><p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;"><span leaf="">REALITY</span></p><h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;"><span leaf="">现实生活里，它无处不在</span></h3></section></section>
+    <p style="font-size:15px;font-weight:800;color:#1C1917;margin:28px 0 14px;padding-left:10px;border-left:3px solid #DC2626;line-height:1.4;"><span leaf="">第一，购物时</span></p>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">你想买某款手机，于是去搜评测。但你不是在看“哪款更好”，而是在看“我选的这款有多好”。看到优点，你点头：“果然没选错。”看到缺点，你划走：“这是黑稿。”最后，你不是被评测说服，而是被自己说服。</span></p>
+    <p style="font-size:15px;font-weight:800;color:#1C1917;margin:28px 0 14px;padding-left:10px;border-left:3px solid #DC2626;line-height:1.4;"><span leaf="">第二，投资时</span></p>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">买入一只股票后，你只看利好消息。公司增长，你说“我眼光真好”。公司亏损，你说“短期波动，长期看好”。别人提醒风险，你觉得他“不懂行”。确认偏误一上头，理性就下线。很多亏损，不是输给市场，而是输给自己的执念。</span></p>
+    <p style="font-size:15px;font-weight:800;color:#1C1917;margin:28px 0 14px;padding-left:10px;border-left:3px solid #DC2626;line-height:1.4;"><span leaf="">第三，职场里</span></p>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">你认定领导不喜欢你，于是：他没叫你开会，是排挤你；他夸别人，是故意冷落你；他给你任务，是刁难你。可也许他只是忙，也许只是没注意到。你越找证据，越觉得是真的。最后，关系真的变差了。</span></p>
+    <section style="background:#FEF2F2;border-left:4px solid #DC2626;border-radius:0 8px 8px 0;padding:16px 20px;margin-bottom:24px;"><p style="font-size:15px;font-weight:700;color:#991B1B;margin:0;line-height:1.8;"><span leaf="">这就是确认偏误最可怕的地方：它会自我实现。</span></p></section>
+    <p style="font-size:15px;font-weight:800;color:#1C1917;margin:28px 0 14px;padding-left:10px;border-left:3px solid #DC2626;line-height:1.4;"><span leaf="">第四，恋爱里</span></p>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">你觉得对方不爱你，就会盯着所有冷淡细节。他加班，是不陪你；他沉默，是无话可说；他忘记纪念日，是不在乎。可如果你觉得对方很爱你，同样的事又能解释成：他加班，是为了未来；他沉默，是性格内敛；他忘记纪念日，是太忙了。不是事实变了，是你的滤镜变了。</span></p>
+    <p style="font-size:15px;font-weight:800;color:#1C1917;margin:28px 0 14px;padding-left:10px;border-left:3px solid #DC2626;line-height:1.4;"><span leaf="">第五，家庭教育里</span></p>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">你认定孩子“粗心”，就只看到错题。他做对十道题，你觉得应该的。他错一道，你就说：“你看，又是粗心。”孩子慢慢也相信：我就是粗心。然后他真的越来越粗心。很多标签，不是孩子天生带的，是大人在确认偏误里贴上去的。</span></p>
+    <p style="font-size:15px;font-weight:800;color:#1C1917;margin:28px 0 14px;padding-left:10px;border-left:3px solid #DC2626;line-height:1.4;"><span leaf="">第六，网络里</span></p>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">算法知道你喜欢什么，就拼命推什么。你越看某个观点，越觉得“大家都这么想”。你越刷某个立场，越觉得“反对的人都是傻子”。其实不是世界变小了，是你的信息圈变小了。</span></p>
+    <p style="font-size:15px;margin:0 0 24px;text-align:center;color:#DC2626;font-weight:700;letter-spacing:1px;border-top:1px solid #FEE2E2;border-bottom:1px solid #FEE2E2;padding:14px 10px;"><span leaf="">你以为你在看世界，其实你在看镜子。</span></p>
+  </section>
+
+  <section style="padding:0 10px;"><section style="height:1px;background:linear-gradient(to right,transparent,#FCA5A5,#DC2626,#FCA5A5,transparent);margin:0;"><span leaf=""><br></span></section></section>
+
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;"><span style="display:inline-block;background:#DC2626;color:#fff;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;"><span leaf="">03</span></span><section><p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;"><span leaf="">WHY</span></p><h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;"><span leaf="">为什么我们只看见想看见的？</span></h3></section></section>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">原因有三个。</span></p>
+    <p style="font-size:15px;font-weight:800;color:#1C1917;margin:28px 0 14px;padding-left:10px;border-left:3px solid #DC2626;line-height:1.4;"><span leaf="">一是，大脑爱省力</span></p>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">接受支持自己的信息，很舒服。接受反对自己的信息，很痛苦。大脑天生喜欢舒服，不喜欢痛苦。</span></p>
+    <p style="font-size:15px;font-weight:800;color:#1C1917;margin:28px 0 14px;padding-left:10px;border-left:3px solid #DC2626;line-height:1.4;"><span leaf="">二是，认知失调</span></p>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">承认自己错了，等于否定过去的自己。为了不难受，我们宁愿继续相信。“我不是错了，是别人不懂。”</span></p>
+    <p style="font-size:15px;font-weight:800;color:#1C1917;margin:28px 0 14px;padding-left:10px;border-left:3px solid #DC2626;line-height:1.4;"><span leaf="">三是，环境在喂养</span></p>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">朋友圈、短视频、群聊、算法推荐，都在给你推送你爱看的内容。你越信，越推；越推，越信。最后，你活在一个巨大的回音室里。</span></p>
+    <section style="background:#FEF2F2;border-radius:0 10px 10px 0;border-left:4px solid #DC2626;padding:18px 22px;margin-bottom:24px;"><p style="font-size:16px;font-weight:800;color:#991B1B;margin:0;line-height:1.8;"><span leaf="">你不是在独立地看世界，而是在被自己的信念筛选世界。</span></p></section>
+  </section>
+
+  <section style="padding:0 10px;"><section style="height:1px;background:linear-gradient(to right,transparent,#FCA5A5,#DC2626,#FCA5A5,transparent);margin:0;"><span leaf=""><br></span></section></section>
+
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;"><span style="display:inline-block;background:#DC2626;color:#fff;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;"><span leaf="">04</span></span><section><p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;"><span leaf="">SOLUTION</span></p><h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;"><span leaf="">怎么跳出确认偏误？</span></h3></section></section>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">下次你特别确信一件事时，先别急着下结论。可以试试这六个方法：</span></p>
+    <section style="margin-bottom:24px;">
+      <p style="font-size:15px;margin:0 0 12px;padding:12px 14px;background:#FEF2F2;border-radius:8px;"><span style="color:#DC2626;font-weight:900;"><span leaf="">1</span></span><span leaf="">　主动找反证。问自己：什么证据会让我改变看法？如果找不到，说明你不是在判断，而是在信仰。</span></p>
+      <p style="font-size:15px;margin:0 0 12px;padding:12px 14px;background:#FEF2F2;border-radius:8px;"><span style="color:#DC2626;font-weight:900;"><span leaf="">2</span></span><span leaf="">　扮演反方。如果我是对方，我会怎么反驳我？站在对面看，很多事会不一样。</span></p>
+      <p style="font-size:15px;margin:0 0 12px;padding:12px 14px;background:#FEF2F2;border-radius:8px;"><span style="color:#DC2626;font-weight:900;"><span leaf="">3</span></span><span leaf="">　多看信息源。不要只看一个博主、一个群、一个平台。尤其要看原始数据和不同立场。</span></p>
+      <p style="font-size:15px;margin:0 0 12px;padding:12px 14px;background:#FEF2F2;border-radius:8px;"><span style="color:#DC2626;font-weight:900;"><span leaf="">4</span></span><span leaf="">　记录预测。把判断写下来，过段时间对照。你会发现，自己没想象中那么准。</span></p>
+      <p style="font-size:15px;margin:0 0 12px;padding:12px 14px;background:#FEF2F2;border-radius:8px;"><span style="color:#DC2626;font-weight:900;"><span leaf="">5</span></span><span leaf="">　找“诚实的反对者”。身边要有一两个敢说真话的人。他们不舒服，但很有用。</span></p>
+      <p style="font-size:15px;margin:0;padding:12px 14px;background:#FEF2F2;border-radius:8px;"><span style="color:#DC2626;font-weight:900;"><span leaf="">6</span></span><span leaf="">　区分“感觉”和“事实”。“我觉得他不喜欢我”，是感觉；“他连续三次没回消息”，是事实。别把感觉当证据。</span></p>
+    </section>
+    <section style="background:#FEF2F2;border-radius:0 10px 10px 0;border-left:4px solid #DC2626;padding:18px 22px;"><p style="font-size:16px;font-weight:800;color:#991B1B;margin:0;line-height:1.8;"><span leaf="">真正清醒的人，不是没有立场，而是随时准备修正立场。</span></p></section>
+  </section>
+
+  <section style="padding:0 10px;"><section style="height:1px;background:linear-gradient(to right,transparent,#FCA5A5,#DC2626,#FCA5A5,transparent);margin:0;"><span leaf=""><br></span></section></section>
+
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;"><span style="display:inline-block;background:#DC2626;color:#fff;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;"><span leaf="">∞</span></span><section><p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;"><span leaf="">THE END</span></p><h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;"><span leaf="">总结</span></h3></section></section>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">确认偏误告诉我们：很多时候，你不是先看见再相信，而是先相信再看见。</span></p>
+    <p style="margin-bottom:20px;font-size:15px;text-align:justify;"><span leaf="">真正清醒的人，不是没有立场，而是随时准备修正立场。不是只找支持自己的声音，而是敢听反对自己的声音。</span></p>
+    <section style="background:#FEF2F2;border-radius:0 10px 10px 0;border-left:4px solid #DC2626;padding:18px 22px;margin-bottom:24px;"><p style="font-size:16px;font-weight:800;color:#991B1B;margin:0;line-height:1.8;"><span leaf="">下次你刷到让你特别爽、特别愤怒、特别认同的内容时，先停三秒，问自己一句：这是事实，还是我想看到的事实？</span></p></section>
+    <p style="font-size:15px;margin:0 0 24px;text-align:center;color:#DC2626;font-weight:700;letter-spacing:1px;border-top:1px solid #FEE2E2;border-bottom:1px solid #FEE2E2;padding:14px 10px;"><span leaf="">别让偏见，变成你的真相。</span></p>
+  </section>
+
+  <section style="padding:0 10px;"><section style="text-align:center;margin:0 0 32px;display:flex;align-items:center;justify-content:center;"><span style="height:2px;width:60px;background:linear-gradient(to right,transparent,#DC2626);margin-right:12px;"><span leaf=""><br></span></span><span style="font-size:11px;color:#DC2626;letter-spacing:3px;font-weight:700;"><span leaf="">END</span></span><span style="height:2px;width:60px;background:linear-gradient(to left,transparent,#DC2626);margin-left:12px;"><span leaf=""><br></span></span></section></section>
+  <section style="padding:0 10px;"><p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;"><span leaf="">我是 {{作者名}}，{{一句话简介，如：专注分享思维与成长观察}}。</span></p><p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;"><span leaf="">如果你觉得今天这篇有收获，欢迎</span><strong style="color:#DC2626;"><span leaf="">点赞、在看、转发</span></strong><span leaf="">三连，我们下篇见。</span></p></section>
+</section>
+  </div>
+</div>
+<script>
+  function gzhShowToast(msg){
+    var t=document.getElementById('gzhToast');
+    t.textContent=msg;t.classList.add('show');
+    clearTimeout(t._timer);
+    t._timer=setTimeout(function(){t.classList.remove('show');},2800);
+  }
+  function gzhCopy(){
+    var el=document.getElementById('gzh-content');
+    // 选中渲染后的富文本节点并复制（等价于手动 Ctrl+A / Ctrl+C，保留全部样式）
+    var range=document.createRange();
+    range.selectNodeContents(el);
+    var sel=window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    var ok=false;
+    try{ok=document.execCommand('copy');}catch(e){ok=false;}
+    sel.removeAllRanges();
+    var btn=document.getElementById('gzhCopyBtn');
+    if(ok){
+      gzhShowToast('✅ 已复制！去公众号编辑器按 Ctrl/⌘+V 粘贴即可');
+      var old=btn.textContent;btn.textContent='✅ 已复制';
+      setTimeout(function(){btn.textContent=old;},2200);
+    }else{
+      gzhShowToast('⚠ 自动复制失败，请手动全选(Ctrl/⌘+A)再复制(Ctrl/⌘+C)');
+    }
+  }
+</script>
+</body>
+</html>
